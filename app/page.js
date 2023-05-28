@@ -2,7 +2,7 @@ import {assignment} from '@/Data/Data'
 import Assignment from '@/components/Assignment'
 import Calender from '@/components/Calender'
 import Card1 from '@/components/Card1'
-import Progress from '@/components/progress'
+import Progress from '@/components/Progress'
 import { ResultData } from '@/Data/ResultData'
 
 export default function Home() {
