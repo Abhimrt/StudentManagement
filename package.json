@@ -11,6 +11,7 @@
   "dependencies": {
     "@mobiscroll/react-lite": "^4.10.9",
     "autoprefixer": "10.4.14",
+    "chart.js": "^2.9.4",
     "next": "13.4.4",
     "postcss": "8.4.23",
     "react": "18.2.0",
