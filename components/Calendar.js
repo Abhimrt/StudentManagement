@@ -2,7 +2,7 @@
 import React from 'react'
 import {AiOutlineRight} from "react-icons/ai"
 
-const Calender = () => {
+const Calendar = () => {
     const week = ["Sun","Mon","Tues","Wed","Thrus","Fri","Sat"]
     const title = ["Team Meetup","Retrospective","","illustration","","Traning",""]
     const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
@@ -46,4 +46,4 @@ const Calender = () => {
   )
 }
 
-export default Calender
+export default Calendar

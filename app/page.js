@@ -1,6 +1,6 @@
 import {assignment} from '@/Data/Data'
 import Assignment from '@/components/Assignment'
-import Calender from '@/components/Calender'
+import Calender from '@/components/Calendar'
 import Card1 from '@/components/Card1'
 
 
