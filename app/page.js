@@ -9,7 +9,6 @@ import { ResultData } from '@/Data/ResultData'
 export default function Home() {
   return (
     <div className='center h-screen w- screen'>
-      <Assignment/>
       {/* <Calender/> */}
       {/* <Progress data = {ResultData}/> */}
     </div>

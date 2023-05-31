@@ -1,6 +1,6 @@
 import React from "react";
 
-const Assignment = (props) => {
+const Assignment = ({data}) => {
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-5 text-[14px] md:text-lg whitespace-nowrap">
       <table className="w-full  text-left text-gray-500">
@@ -26,11 +26,11 @@ const Assignment = (props) => {
               scope="row"
               className="px-3 md:px-6 py-2 md-py-3 font-medium text-gray-900 whitespace-nowrap"
             >
-              {props.data.Subject}
+              {data.Subject}
             </th>
-            <td className="px-3 md:px-6 py-2 md-py-3">{props.data.StartDate}</td>
-            <td className="px-3 md:px-6 py-2 md-py-3">{props.data.EndDate}</td>
-            <td className="px-3 md:px-6 py-2 md-py-3">{props.data.Status}</td>
+            <td className="px-3 md:px-6 py-2 md-py-3">{data.StartDate}</td>
+            <td className="px-3 md:px-6 py-2 md-py-3">{data.EndDate}</td>
+            <td className="px-3 md:px-6 py-2 md-py-3">{data.Status}</td>
           </tr>
         </tbody>
       </table>
