@@ -6,6 +6,8 @@ import { ResultData } from '@/Data/ResultData'
 import Profile from '@/components/Profile'
 import Calendar from '@/components/Calendar'
 import Assignment from '@/components/Assignment'
+import PieChart from '@/components/PieChart'
+
 
 const page = () => {
   return (
@@ -41,7 +43,8 @@ const page = () => {
         </div>
         {/* pie chart and event  */}
         <div className="center  p-5 flex-col md:flex-row" >
-            <Progress data={ResultData}  />
+            <PieChart data={data.CurrentPercentage}  label = "Percentage"/>
+            {/* <PieChart data={data.ProjectStatus}  label = "Project Status"/> */}
             <Calendar/>
         </div>
         {/* assignment and fee details */}

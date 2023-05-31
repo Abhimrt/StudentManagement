@@ -29,8 +29,8 @@ const data = {
     "NumberOfProject": 2,
     "NumberOfTest": 3,
     "ExtraActivity": 2,
-    "CurrentPercentage": "60%",
-    "ProjectStatus": "30%",
+    "CurrentPercentage": "60",
+    "ProjectStatus": "30",
     "Event ": 10,
     "Holiday": 20,
     "StudentProfile": {
