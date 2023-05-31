@@ -48,8 +48,8 @@ const page = () => {
         <div className="flex items-center justify-between flex-col md:flex-row p-5">
           <Assignment data = {data.AssigmentDetail.filterAssigment}/>
           <Card1
-                number={data.NumberOfQueries}
-                type="Number of Queries"
+                number={data.DuesFeesDetail.filterDuesFees.DueFees}
+                type="Pending Fee"
                 className="w-[350px]"
             />
         </div>
