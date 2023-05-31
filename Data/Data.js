@@ -20,4 +20,88 @@ const assignment = [
         date:'may 10'
     },
 ]
-export  {assignment}
+
+const data = {
+    "StudentId": "xyz01",
+    "NumberOfQueries": 10,
+    "NumberOfAssigment": 4,
+    "NumberOfTask": 2,
+    "NumberOfProject": 2,
+    "NumberOfTest": 3,
+    "ExtraActivity": 2,
+    "CurrentPercentage": "60%",
+    "ProjectStatus": "30%",
+    "Event ": 10,
+    "Holiday": 20,
+    "StudentProfile": {
+       "StudentId": "xyz01",
+       "studentName": "vikash",
+       "AddmissionSession": "2022-2023",
+       "Course": 1,
+       "batch": 3,
+       "gender": "Male"
+    },
+    "perents": {
+       "MotherName": "Reema",
+       "MotherMobileNumber": 9875481262,
+       "FatherName": "Ram",
+       "FatherMobileNumber": 9865327444
+    },
+    "Address": {
+       "HouseNo": 546,
+       "street": 2,
+       "area": "sadikpur"
+    },
+    "StudentProgress": {
+       "july": [
+          "Math",
+          "15%",
+          "English",
+          "25%",
+          "Science",
+          "15%"
+       ],
+       "August": [
+          "Math",
+          "20%",
+          "English",
+          "20%",
+          "Science",
+          "30%"
+       ],
+       "September": [
+          "Math",
+          "25%",
+          "English",
+          "25%",
+          "Science",
+          "35%"
+       ],
+       "October": [
+          "Math",
+          "15%",
+          "English",
+          "35%",
+          "Science",
+          "45%"
+       ]
+    },
+    "AssigmentDetail": {
+       "filterAssigment": {
+          "Subject": "Math",
+          "StartDate": "2023-05-10",
+          "EndDate": "2023-05-15",
+          "Status": "pending"
+       }
+    },
+    "DuesFeesDetail": {
+       "filterDuesFees": {
+          "studentId": "xyz04",
+          "studentName": "vikash",
+          "AdmissionSession": "2022-2023",
+          "DueFees": 6000,
+          "status": "pending"
+       }
+    }
+ }
+export  {assignment,data}
