@@ -17,23 +17,23 @@ const page = () => {
         <div className=' flex justify-center md:justify-between items-center flex-wrap '>
           <Card1
             number={data.NumberOfQueries}
-            type="Number of Queries"
+            type="Queries"
           />
           <Card1
             number={data.NumberOfTask}
-            type="Number of Task"
+            type="Task"
           />
           <Card1
             number={data.NumberOfAssigment}
-            type="Number of Assignment"
+            type="Assignment"
           />
           <Card1
             number={data.NumberOfProject}
-            type="Number of Project"
+            type="Project"
           />
           <Card1
             number={data.NumberOfTest}
-            type="Number of Test"
+            type="Test"
           />
         </div>
         {/* graph and student profile */}
@@ -44,7 +44,7 @@ const page = () => {
         {/* pie chart and event  */}
         <div className="center  p-5 flex-col md:flex-row" >
           <PieChart data={data.CurrentPercentage} label="Percentage" />
-          {/* <PieChart data={data.ProjectStatus}  label = "Project Status"/> */}
+          <PieChart data={data.ProjectStatus}  label = "Project Status"/>
           <Calendar />
         </div>
         {/* assignment and fee details */}

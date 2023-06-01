@@ -11,9 +11,9 @@ const Calendar = () => {
         next7.push(new Date(new Date().setDate(new Date().getDate() + i)))
     }
   return (
-    <div>
+    <div className='w-full md:w-1/3'>
         <h3 className='font-bold mb-3 translate-x-[-10px]'>Event Details</h3>
-        <div className='component w-[350px] space-y-4'>
+        <div className='component w-full space-y-4'>
         {
             next7.map((e,i)=>(
                 <div className='center space-x-5 mb-3 w-full whitespace-nowrap' key={i}>

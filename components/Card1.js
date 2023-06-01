@@ -8,18 +8,18 @@ const Card1 = (props) => {
   /*
     Content to be shared:  | Example
         number = "Integer" | //124
-        type = "String"    | // number of students
+        type = "String"    | // students
   */
   return (
-    <div className='component m-2 my-4 md:m-5'>
+    <div className='component m-2 my-4 md:m-5 basis-1/6 self-stretch whitespace-nowrap text-center'>
       <div>
-        {(props.type === "Number of Queries")&& <FcQuestions className='text-4xl mx-auto mb-2'/>}
-        {(props.type === "Number of Task")&& <FcParallelTasks className='text-4xl mx-auto mb-2'/>}
-        {(props.type === "Number of Assignment")&& <MdAssignmentAdd className='text-4xl mx-auto mb-2 text-red-900'/>}
-        {(props.type === "Number of Project")&& <AiOutlineProject className='text-4xl mx-auto mb-2 text-blue-900'/>}
-        {(props.type === "Number of Test")&& <SiTestcafe className='text-4xl mx-auto mb-2 text-green-900'/>}
-        <p className='text-gray-500'>{props.type}:</p>
+        {(props.type === "Queries")&& <FcQuestions className='text-4xl mx-auto mb-2'/>}
+        {(props.type === "Task")&& <FcParallelTasks className='text-4xl mx-auto mb-2'/>}
+        {(props.type === "Assignment")&& <MdAssignmentAdd className='text-4xl mx-auto mb-2 text-red-900'/>}
+        {(props.type === "Project")&& <AiOutlineProject className='text-4xl mx-auto mb-2 text-blue-900'/>}
+        {(props.type === "Test")&& <SiTestcafe className='text-4xl mx-auto mb-2 text-green-900'/>}
         <p className='font-bold text-3xl text-center' > {props.number}</p>
+        <p className='text-gray-500'>{props.type}</p>
       </div>
     </div>
   )

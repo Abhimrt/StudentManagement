@@ -4,7 +4,7 @@ import { Chart } from "chart.js";
 
 const PieChart = ({ data, label }) => {
   useEffect(() => {
-    var ctx = document.getElementById("pieChart").getContext("2d");
+    var ctx = document.getElementById(label).getContext("2d");
 
     var pieChart = new Chart(ctx, {
       type: "pie",
@@ -36,9 +36,9 @@ const PieChart = ({ data, label }) => {
   return (
     <>
       {/* Filled Pie chart */}
-      <div className="w-full md:w-1/2  p-5">
+      <div className="w-full  md:w-1/3  p-5">
         <div className=" ">
-          <canvas id="pieChart" className=""></canvas>
+          <canvas id={label} className=""></canvas>
         </div>
       </div>
     </>
