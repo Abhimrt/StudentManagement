@@ -2,7 +2,9 @@ import React from "react";
 
 const Assignment = ({data}) => {
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-5 text-[14px] md:text-lg whitespace-nowrap">
+    <div>
+      <h3 className="font-bold ">Assignment Details</h3>
+       <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-0 my-3 md:m-5  whitespace-nowrap">
       <table className="w-full  text-left text-gray-500">
         <thead className=" text-gray-700 uppercase bg-slate-200">
           <tr>
@@ -34,6 +36,7 @@ const Assignment = ({data}) => {
           </tr>
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
