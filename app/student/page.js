@@ -12,7 +12,7 @@ import PieChart from '@/components/PieChart'
 const page = () => {
   return (
     <div className='w-[98vw] m-auto overflow-hidden'>
-      <div className='w-full px-5'>
+      <div className='w-full px-1 md:px-5'>
         {/* top links */}
         <div className=' flex justify-center md:justify-between items-center flex-wrap '>
             <Card1
@@ -37,7 +37,7 @@ const page = () => {
             />
         </div>
         {/* graph and student profile */}
-        <div className="center p-5 flex-col md:flex-row">
+        <div className="center  p-5 flex-col md:flex-row">
             <Progress data={ResultData}  />
             <Profile data={data} />
         </div>
