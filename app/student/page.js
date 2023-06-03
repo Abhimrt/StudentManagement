@@ -2,7 +2,7 @@ import React from 'react'
 import Card1 from '@/components/Card1'
 import { data } from '@/Data/Data'
 import Progress from '@/components/Progress'
-import { ResultData } from '@/Data/ResultData'
+// import { ResultData } from '@/Data/ResultData'
 import Profile from '@/components/Profile'
 import Calendar from '@/components/Calendar'
 import Assignment from '@/components/Assignment'
@@ -38,7 +38,7 @@ const page = () => {
         </div>
         {/* graph and student profile */}
         <div className="center  p-5 flex-col md:flex-row">
-          <Progress data={ResultData} />
+          <Progress data={data.StudentProgress} />
           <Profile data={data} />
         </div>
         {/* pie chart and event  */}

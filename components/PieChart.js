@@ -7,15 +7,15 @@ const PieChart = ({ data, label }) => {
     var ctx = document.getElementById(label).getContext("2d");
 
     var pieChart = new Chart(ctx, {
-      type: "pie",
+      type: "doughnut",
       data: {
-        labels: [label],
+        labels: [label,""],
         datasets: [
           {
             data: [data, 100 - data],
-            backgroundColor: ["green", ""],
-            hoverBackgroundColor: ["green", ""],
-          },
+            backgroundColor: ["rgb(87, 184, 255)", "#bababa"],
+            hoverBackgroundColor: ["rgb(33, 118, 174)", ""],
+          }
         ],
       },
       options: {
