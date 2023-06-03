@@ -9,7 +9,7 @@ const PieChart = ({ data, label }) => {
     var pieChart = new Chart(ctx, {
       type: "doughnut",
       data: {
-        labels: [label,""],
+        labels: [label],
         datasets: [
           {
             data: [data, 100 - data],
@@ -36,7 +36,7 @@ const PieChart = ({ data, label }) => {
   return (
     <>
       {/* Filled Pie chart */}
-      <div className="w-full  md:w-1/3  p-5">
+      <div className="w-full  md:w-1/3  ">
         <div className=" ">
           <canvas id={label} className=""></canvas>
         </div>

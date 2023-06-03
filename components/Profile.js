@@ -17,14 +17,16 @@ const Profile = ({ data }) => {
           <span className="text-gray-700" >Course</span> : {data.StudentProfile.Course}
           <span className="ml-5"><span className="text-gray-700">Batch</span> : {data.StudentProfile.batch}</span>
         </p>
-        <p className="mb-3 font-normal text-gray-500 ">
-          <span className="text-gray-700">Father Name</span> : {data.perents.FatherName}
-          <span className="ml-5"> <span className="text-gray-700">Mob. No.</span> : {data.perents.FatherMobileNumber}</span>
+        <p className=" mb-3 font-normal text-gray-500 space-x-3 ">
+          <span><span className="text-gray-700">Father Name</span> : {data.perents.FatherName}</span>
+          <br className="block md:hidden"/>
+          <span > <span className="text-gray-700 ">Mob. No.</span> : {data.perents.FatherMobileNumber}</span>
         </p>
-        <p className="mb-3 font-normal text-gray-500 ">
-          <span className="text-gray-700 text-left">Address</span> <br />
+        <p className="mb-3 font-normal text-gray-5d00">
+          <span className="text-gray-700 text-left ">Address</span> <br />
           <span className="text-gray-700">House No.</span> : {data.Address.HouseNo}
           <span className="ml-5"> <span className="text-gray-700">Street</span> : {data.Address.street}</span>
+          <br className="block md:hidden"/>
           <span className="ml-5"> <span className="text-gray-700">Area</span> : {data.Address.area}</span>
         </p>
        
