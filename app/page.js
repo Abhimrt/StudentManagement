@@ -1,6 +1,6 @@
-import {assignment} from '@/Data/Data'
+import { assignment } from '@/Data/Data'
 import Todo from '@/components/Todo'
-import Assignment from '@/components/Assignment'
+import Assignment from '@/components/Table'
 import Calender from '@/components/Calendar'
 import Card1 from '@/components/Card1'
 import Progress from '@/components/Progress'

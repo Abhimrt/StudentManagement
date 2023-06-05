@@ -1,6 +1,6 @@
 import React from "react";
 
-const Assignment = ({data}) => {
+const Table = ({data}) => {
   return (
     <div>
       <h3 className="font-bold ">Assignment Details</h3>
@@ -41,4 +41,4 @@ const Assignment = ({data}) => {
   );
 };
 
-export default Assignment;
+export default Table;

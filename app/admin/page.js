@@ -17,19 +17,15 @@ const page = () => {
         <div className=' flex justify-center md:justify-between items-center flex-wrap '>
           <Card1
             number={data.NumberOfQueries}
-            type="Queries"
+            type="Student"
           />
           <Card1
             number={data.NumberOfTask}
-            type="Task"
+            type="Employee"
           />
           <Card1
             number={data.NumberOfAssigment}
-            type="Assignment"
-          />
-          <Card1
-            number={data.NumberOfProject}
-            type="Project"
+            type="Course"
           />
           <Card1
             number={data.NumberOfTest}
@@ -42,13 +38,9 @@ const page = () => {
           <Profile data={data} />
         </div>
         {/* pie chart and event  */}
-        <div className="center  p-5 flex-col md:flex-row basis-3" >
-          <div className='w-full md:w-1/3'>
-            <PieChart data={data.CurrentPercentage} label="Percentage" />
-          </div>
-          <div className="w-full md:w-1/3">
-            <PieChart data={data.ProjectStatus} label="Project Status" />
-          </div>
+        <div className="center  p-5 flex-col md:flex-row" >
+          <PieChart data={data.CurrentPercentage} label="Percentage" />
+          <PieChart data={data.ProjectStatus} label="Project Status" />
           <Calendar />
         </div>
         {/* assignment and fee details */}

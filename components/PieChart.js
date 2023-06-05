@@ -36,7 +36,7 @@ const PieChart = ({ data, label }) => {
   return (
     <>
       {/* Filled Pie chart */}
-      <div className="w-full  md:w-1/3  ">
+      <div className=" w-full  ">
         <div className=" ">
           <canvas id={label} className=""></canvas>
         </div>
