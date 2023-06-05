@@ -55,35 +55,35 @@ const data = {
     "StudentProgress": {
        "july": [
           "Math",
-          "15%",
+          "15",
           "English",
-          "25%",
+          "25",
           "Science",
-          "15%"
+          "15"
        ],
        "August": [
           "Math",
-          "20%",
+          "20",
           "English",
-          "20%",
+          "20",
           "Science",
-          "30%"
+          "30"
        ],
        "September": [
           "Math",
-          "25%",
+          "25",
           "English",
-          "25%",
+          "25",
           "Science",
-          "35%"
+          "35"
        ],
        "October": [
           "Math",
-          "15%",
+          "15",
           "English",
-          "35%",
+          "35",
           "Science",
-          "45%"
+          "45"
        ]
     },
     "AssigmentDetail": {
