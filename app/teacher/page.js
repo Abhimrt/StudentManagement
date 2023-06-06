@@ -1,11 +1,11 @@
 import React from 'react'
 import Card1 from '@/components/Card1'
-import { data } from '@/Data/Data'
+import { data ,teacherData} from '@/Data/Data'
 import Progress from '@/components/Progress'
 // import { ResultData } from '@/Data/ResultData'
 import Profile from '@/components/Profile'
 import Calendar from '@/components/Calendar'
-import Assignment from '@/components/Table'
+import Table from '@/components/Table'
 import PieChart from '@/components/PieChart'
 
 
@@ -16,22 +16,22 @@ const page = () => {
                 {/* top links */}
                 <div className=' flex justify-center md:justify-between items-center flex-wrap basis-4 '>
                     <div className='w-1/2 md:w-1/4'>
-                        <PieChart data={data.CurrentPercentage} label="Percentage" />
+                        <PieChart data={teacherData['Maths 4th class']} label="Maths 4th class" />
                     </div>
                     <div className='w-1/2 md:w-1/4'>
-                        <PieChart data={data.CurrentPercentage} label="Percentage1" />
+                        <PieChart data={teacherData['Maths 5th class']} label="Maths 5th class" />
                     </div>
                     <div className='w-1/2 md:w-1/4'>
-                        <PieChart data={data.CurrentPercentage} label="Percentage2" />
+                        <PieChart data={teacherData['Maths 6th class']} label="Maths 6th class" />
                     </div>
                     <div className='w-1/2 md:w-1/4'>
-                        <PieChart data={data.CurrentPercentage} label="Percentage3" />
+                        <PieChart data={teacherData['Maths 7th class']} label="Maths 7th class" />
                     </div>
                 </div>
                 {/* graph and student profile */}
                 <div className="center  p-5 flex-col md:flex-row">
-                    <Progress data={data.StudentProgress} />
-                    <Profile data={data} />
+                <Table data={teacherData.Attendance} heading={"Attendance Details:"}/>
+                    <Profile data={teacherData.TeacherProfile} />
                 </div>
                 {/* pie chart and event  */}
                 <div className="center  p-5 flex-col md:flex-row" >
@@ -41,7 +41,7 @@ const page = () => {
                 </div>
                 {/* assignment and fee details */}
                 <div className="flex items-center justify-around flex-col md:flex-row p-5">
-                    <Assignment data={data.AssigmentDetail.filterAssigment} />
+                    <Table data={data.AssigmentDetail.filterAssigment} />
                     {/* fees detail start */}
                     <div>
                         <h3 class="font-bold ">Due Fees Detail:</h3>

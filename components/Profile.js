@@ -7,15 +7,15 @@ const Profile = ({ data }) => {
       <div className="p-6  bg-slate-200 border h-full border-gray-200 rounded-lg shadow-lg">
         <Image src={"/user.png"} width={200} height={200} className="m-auto " />
         <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 capitalize">
-          {data.StudentProfile.studentName}
+          {data.studentName}
         </h2>
 
         <p className="mb-3 font-normal text-gray-500 ">
-          <span className="text-gray-700">Session</span> : {data.StudentProfile.AddmissionSession}
+          <span className="text-gray-700">Session</span> : {data.AddmissionSession}
         </p>
         <p className="mb-3 font-normal text-gray-500 ">
-          <span className="text-gray-700" >Course</span> : {data.StudentProfile.Course}
-          <span className="ml-5"><span className="text-gray-700">Batch</span> : {data.StudentProfile.batch}</span>
+          <span className="text-gray-700" >Course</span> : {data.Course}
+          <span className="ml-5"><span className="text-gray-700">Batch</span> : {data.batch}</span>
         </p>
         <p className=" mb-3 font-normal text-gray-500 space-x-3 ">
           <span><span className="text-gray-700">Father Name</span> : {data.perents.FatherName}</span>

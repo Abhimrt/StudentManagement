@@ -39,7 +39,7 @@ const page = () => {
         {/* graph and student profile */}
         <div className="center  p-5 flex-col md:flex-row">
           <Progress data={data.StudentProgress} />
-          <Profile data={data} />
+          <Profile data={data.StudentProfile} />
         </div>
         {/* pie chart and event  */}
         <div className="center  p-5 flex-col md:flex-row basis-3" >
@@ -53,32 +53,14 @@ const page = () => {
         </div>
         {/* assignment and fee details */}
         <div className="flex items-center justify-around flex-col md:flex-row p-5">
-          <Assignment data={data.AssigmentDetail.filterAssigment} />
+          <Assignment data={data.AssigmentDetail.filterAssigment} heading={"Assignment Details"} />
           {/* fees detail start */}
-          <div>
-            <h3 class="font-bold ">Due Fees Detail:</h3>
-            <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-0 my-3 md:m-5  whitespace-nowrap">
-              <table className="w-full  text-left text-gray-500">
-                <thead className=" text-gray-700 uppercase bg-slate-200">
-                  <tr>
-                    <th scope="col" className="px-3 md:px-6 py-2 md-py-3">
-                      Due Fees
-                    </th>
-
-                    <th scope="col" className="px-3 md:px-6 py-2 md-py-3">
-                      Status
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-white border-b">
-                    <td className="px-3 md:px-6 py-2 md-py-3">{data.DuesFeesDetail.filterDuesFees.DueFees}</td>
-                    <td className="px-3 md:px-6 py-2 md-py-3">{data.DuesFeesDetail.filterDuesFees.status}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+              <Assignment data={[
+                {
+                  "Due Fees": data.DuesFeesDetail.filterDuesFees.DueFees,
+                  "Status": data.DuesFeesDetail.filterDuesFees.status,
+                }
+              ]} heading={"Fees Details"} />
           {/* fees detail over */}
         </div>
       </div>

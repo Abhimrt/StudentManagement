@@ -11,7 +11,7 @@ const Card1 = (props) => {
         type = "String"    | // students
   */
   return (
-    <div className='component m-2 my-4 md:m-5 basis-1/6 self-stretch whitespace-nowrap text-center hover:scale-3'>
+    <div className='component m-2 md:m-3 basis-1/6 self-stretch whitespace-nowrap text-center hover:scale-3'>
       <div>
         {(props.type === "Queries")&& <FcQuestions className='text-4xl mx-auto mb-2'/>}
         {(props.type === "Task")&& <FcParallelTasks className='text-4xl mx-auto mb-2'/>}
