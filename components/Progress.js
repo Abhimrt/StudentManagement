@@ -59,11 +59,22 @@ const Progress = ({ data }) => {
                 ]
             },
             options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 30
+                            }
+                        }
+                    }
+                },
                 scales: {
                     yAxes: [{
+                        fontSize: 20,
                         ticks: {
-                            beginAtZero: true
-                        }
+                            beginAtZero: true,
+                        },
                     }]
                 }
             }
@@ -74,7 +85,7 @@ const Progress = ({ data }) => {
         {/* Filled line chart */}
         <div className="w-full   mb-3 ">
             <div className=' md:h-auto bg-slate-200 pt-0 rounded-xl  w-full h-fit my-auto  shadow-md'>
-                <canvas id='myChart' className="px-1 md:px-3"></canvas>
+                <canvas id='myChart' className="px-1 md:px-3 text-3xl"></canvas>
             </div>
         </div>
     </>

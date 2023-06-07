@@ -12,33 +12,33 @@ import PieChart from '@/components/PieChart'
 const page = () => {
   return (
     <div className='w-[95vw] m-auto overflow-hidden'>
-      <div className='w-full overflow-hidden'>
+      <div className=' overflow-hidden'>
         {/* top links */}
-        <div className=' grid  grid-auto-fit gap-4 '>
+        <div className='grid  grid-auto-fit gap-4 '>
           <Card1
             number={data.NumberOfQueries}
             type="Queries"
-            color="green"
+            color="#fca5a5"
           />
           <Card1
             number={data.NumberOfTask}
             type="Task"
-            color="violet"
+            color="#fdba74"
           />
           <Card1
             number={data.NumberOfAssigment}
             type="Assignment"
-            color="yellow"
+            color="#86efac"
           />
           <Card1
             number={data.NumberOfProject}
             type="Project"
-            color="blue"
+            color="#67e8f9"
           />
           <Card1
             number={data.NumberOfTest}
             type="Test"
-            color="red"
+            color="#a5b4fc"
           />
         </div>
         {/* graph and student profile */}

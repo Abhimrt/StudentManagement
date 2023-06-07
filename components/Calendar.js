@@ -1,6 +1,7 @@
 
 import React from 'react'
 import {AiOutlineRight} from "react-icons/ai"
+import Heading from './Heading'
 
 const Calendar = () => {
     const week = ["Sun","Mon","Tues","Wed","Thrus","Fri","Sat"]
@@ -12,8 +13,8 @@ const Calendar = () => {
     }
   return (
     <div className='w-full px-5 md:px-0'>
-        <h3 className='font-bold mb-3 translate-x-[-10px]'>Event Details</h3>
         <div className='component w-full space-y-4'>
+       <Heading heading={"Calendar"} />
         {
             next7.map((e,i)=>(
                 <div className='center space-x-5 mb-3 w-full whitespace-nowrap' key={i}>

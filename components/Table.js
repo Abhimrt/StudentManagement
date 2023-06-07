@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "./Heading";
 /*
 
     data = [ 
@@ -23,10 +24,10 @@ const Table = ({heading,data}) => {
   const tableHeadings = Object.keys(data[0]);
   return (
     <div >
-      <h3 className="font-bold ">{heading}</h3>
        <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-0 my-3 md:m-5  whitespace-nowrap">
+        <Heading heading={heading}/>
       <table className="w-full  text-left text-gray-500">
-        <thead className=" text-gray-700 uppercase bg-slate-200">
+        <thead className=" text-gray-700 uppercase bg-blue-300">
           <tr>
             {
               tableHeadings.map((e,i)=>(

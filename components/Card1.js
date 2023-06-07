@@ -6,7 +6,7 @@ import { MdOutlineDateRange } from "react-icons/md"
 import { RiQuestionnaireFill } from "react-icons/ri"
 import "@/css/main.css"
 
-const Card1 = (props) => {
+const Card1 = async (props) => {
   /*
     Content to be shared:  | Example
         number = "Integer" | //124
@@ -17,7 +17,7 @@ const Card1 = (props) => {
  }
   return (
     <div className='profileCard'>
-        <div className={`icons bg-${props.color?props.color:"yellow"}-300`}>
+        <div className={`icons `} style={{background:props.color?props.color:"#d6d3d1"}}>
           {(props.type === "Queries") && <RiQuestionnaireFill className='text-4xl mx-auto mb-2' />}
           {(props.type === "Task") && <BiTask className='text-4xl mx-auto mb-2' />}
           {(props.type === "Assignment") && <MdAssignmentAdd className='text-4xl mx-auto mb-2' />}
@@ -26,7 +26,7 @@ const Card1 = (props) => {
         </div>
         <div className='w-7/12 mr-5' >
           <p className='font-bold text-3xl text-center' > {props.number}</p>
-          <p className='text-gray-500'>{props.type}</p>
+          <p className='text-gray-500 text-2xl'>{props.type}</p>
         </div>
     </div>
   )

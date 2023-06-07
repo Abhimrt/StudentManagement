@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { Chart } from "chart.js";
+import Heading from "./Heading";
 
 const PieChart = ({ data, label }) => {
   useEffect(() => {
@@ -29,9 +30,12 @@ const PieChart = ({ data, label }) => {
   return (
     <>
       {/* Filled Pie chart */}
-      <div className=" w-full ">
-        <div className=" ">
-          <canvas id={label} className=" h-10 p-0 bg-black"></canvas>
+      <div className=" w-full  ">
+        <div className="  bg-slate-200 rounded-md shadow-md">
+          <canvas id={label} className="">
+
+          </canvas>
+          <Heading heading={label} />
         </div>
       </div>
     </>
