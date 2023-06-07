@@ -4,7 +4,7 @@
     background-color: aqua;
     display: grid;
     grid-template-rows: 40vh 60vh 55vh 45vh;
-    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+    grid-template-columns: 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw 9.8vw;
 }
 .item{
     border: 0.25em solid greenyellow;
