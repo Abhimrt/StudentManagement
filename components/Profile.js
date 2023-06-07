@@ -3,7 +3,7 @@ import React from "react";
 
 const Profile = ({ data }) => {
   return (
-    <div className="w-full md:w-1/2 self-stretch p-0 md:p-5 text-center" >
+    <div className="w-full self-stretch p-0  text-center" >
       <div className="p-6  bg-slate-200 border h-full border-gray-200 rounded-lg shadow-lg">
         <Image src={"/user.png"} width={200} height={200} className="m-auto " />
         <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 capitalize">
@@ -33,6 +33,7 @@ const Profile = ({ data }) => {
 
       </div>
     </div>
+
   );
 };
 

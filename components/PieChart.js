@@ -21,13 +21,6 @@ const PieChart = ({ data, label }) => {
       options: {
         plugins: {
           datalabels: {
-            display: true,
-            align: "up",
-            backgroundColor: "red",
-            borderRadius: 3,
-            font: {
-              size: 18,
-            },
           },
         },
       },
@@ -36,9 +29,9 @@ const PieChart = ({ data, label }) => {
   return (
     <>
       {/* Filled Pie chart */}
-      <div className=" w-full  ">
+      <div className=" w-full ">
         <div className=" ">
-          <canvas id={label} className=""></canvas>
+          <canvas id={label} className=" h-10 p-0 bg-black"></canvas>
         </div>
       </div>
     </>

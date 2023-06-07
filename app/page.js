@@ -8,6 +8,7 @@ import { ResultData } from '@/Data/ResultData'
 import Marks from '@/components/Marks'
 import { data } from '@/Data/Data'
 
+
 export default function Home() {
   return (
     <div className='center h-screen w- screen'>

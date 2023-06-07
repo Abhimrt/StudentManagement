@@ -1,0 +1,17 @@
+.profileCard{
+    
+    @apply  min-w-[12rem] flex justify-between  items-center bg-slate-200 rounded-md  h-32  shadow-md mt-5 
+    whitespace-nowrap text-center overflow-hidden;
+
+    .icons{
+        @include center;
+        @apply w-5/12 h-full shadow-md;
+
+        .mx-auto{
+            font-size: 3rem;
+            @apply p-0 drop-shadow-sm text-white;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.206);
+        }
+
+    }
+}

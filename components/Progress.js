@@ -72,9 +72,9 @@ const Progress = ({ data }) => {
 
     return (<>
         {/* Filled line chart */}
-        <div className="w-full md:w-1/2  mb-3 p-0 md:p-5">
+        <div className="w-full   mb-3 ">
             <div className=' md:h-auto bg-slate-200 pt-0 rounded-xl  w-full h-fit my-auto  shadow-md'>
-                <canvas id='myChart'></canvas>
+                <canvas id='myChart' className="px-1 md:px-3"></canvas>
             </div>
         </div>
     </>

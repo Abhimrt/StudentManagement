@@ -11,7 +11,7 @@ const Calendar = () => {
         next7.push(new Date(new Date().setDate(new Date().getDate() + i)))
     }
   return (
-    <div className='w-full md:w-1/3'>
+    <div className='w-full px-5 md:px-0'>
         <h3 className='font-bold mb-3 translate-x-[-10px]'>Event Details</h3>
         <div className='component w-full space-y-4'>
         {

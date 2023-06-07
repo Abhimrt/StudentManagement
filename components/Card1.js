@@ -1,8 +1,10 @@
 import React from 'react'
-import {FcQuestions,FcParallelTasks} from "react-icons/fc"
-import {MdAssignmentAdd} from "react-icons/md"
-import {AiOutlineProject} from "react-icons/ai"
-import {SiTestcafe} from "react-icons/si"
+import { BiTask } from "react-icons/bi"
+import { MdAssignmentAdd } from "react-icons/md"
+import { AiOutlineProject } from "react-icons/ai"
+import { MdOutlineDateRange } from "react-icons/md"
+import { RiQuestionnaireFill } from "react-icons/ri"
+import "@/css/main.css"
 
 const Card1 = (props) => {
   /*
@@ -10,17 +12,22 @@ const Card1 = (props) => {
         number = "Integer" | //124
         type = "String"    | // students
   */
+ const icons = {
+
+ }
   return (
-    <div className='component m-2 md:m-3 basis-1/6 self-stretch whitespace-nowrap text-center hover:scale-3'>
-      <div>
-        {(props.type === "Queries")&& <FcQuestions className='text-4xl mx-auto mb-2'/>}
-        {(props.type === "Task")&& <FcParallelTasks className='text-4xl mx-auto mb-2'/>}
-        {(props.type === "Assignment")&& <MdAssignmentAdd className='text-4xl mx-auto mb-2 text-red-900'/>}
-        {(props.type === "Project")&& <AiOutlineProject className='text-4xl mx-auto mb-2 text-blue-900'/>}
-        {(props.type === "Test")&& <SiTestcafe className='text-4xl mx-auto mb-2 text-green-900'/>}
-        <p className='font-bold text-3xl text-center' > {props.number}</p>
-        <p className='text-gray-500'>{props.type}</p>
-      </div>
+    <div className='profileCard'>
+        <div className={`icons bg-${props.color?props.color:"yellow"}-300`}>
+          {(props.type === "Queries") && <RiQuestionnaireFill className='text-4xl mx-auto mb-2' />}
+          {(props.type === "Task") && <BiTask className='text-4xl mx-auto mb-2' />}
+          {(props.type === "Assignment") && <MdAssignmentAdd className='text-4xl mx-auto mb-2' />}
+          {(props.type === "Project") && <AiOutlineProject className='text-4xl mx-auto mb-2' />}
+          {(props.type === "Test") && <MdOutlineDateRange className='text-4xl mx-auto mb-2' />}
+        </div>
+        <div className='w-7/12 mr-5' >
+          <p className='font-bold text-3xl text-center' > {props.number}</p>
+          <p className='text-gray-500'>{props.type}</p>
+        </div>
     </div>
   )
 }

@@ -11,54 +11,65 @@ import PieChart from '@/components/PieChart'
 
 const page = () => {
   return (
-    <div className='w-[98vw] m-auto overflow-hidden'>
-      <div className='w-full px-1 md:px-5'>
+    <div className='w-[95vw] m-auto overflow-hidden'>
+      <div className='w-full overflow-hidden'>
         {/* top links */}
-        <div className=' flex justify-center md:justify-between items-center flex-wrap '>
+        <div className=' grid  grid-auto-fit gap-4 '>
           <Card1
             number={data.NumberOfQueries}
             type="Queries"
+            color="green"
           />
           <Card1
             number={data.NumberOfTask}
             type="Task"
+            color="violet"
           />
           <Card1
             number={data.NumberOfAssigment}
             type="Assignment"
+            color="yellow"
           />
           <Card1
             number={data.NumberOfProject}
             type="Project"
+            color="blue"
           />
           <Card1
             number={data.NumberOfTest}
             type="Test"
+            color="red"
           />
         </div>
         {/* graph and student profile */}
-        <div className="center  p-5 flex-col md:flex-row">
+        <div className="grid  grid-auto-fit-lg place-items-center gap-4 my-5">
           <Progress data={data.StudentProgress} />
           <Profile data={data.StudentProfile} />
         </div>
         {/* pie chart and event  */}
-        <div className="center  p-5 flex-col md:flex-row basis-3" >
-          <div className='w-full md:w-1/3'>
+        <div className="grid  grid-auto-fit-xl place-items-center gap-4  my-5" >
+        
             <PieChart data={data.CurrentPercentage} label="Percentage" />
-          </div>
-          <div className="w-full md:w-1/3">
+        
             <PieChart data={data.ProjectStatus} label="Project Status" />
-          </div>
+        
           <Calendar />
         </div>
         {/* assignment and fee details */}
-        <div className="flex items-center justify-around flex-col md:flex-row p-5">
+        <div className="flex items-center justify-around flex-col  md:flex-row p-5">
           <Assignment data={data.AssigmentDetail.filterAssigment} heading={"Assignment Details"} />
           {/* fees detail start */}
               <Assignment data={[
                 {
+                  "Fees": "Tuition",
+                  "Total Fees": 125000,
                   "Due Fees": data.DuesFeesDetail.filterDuesFees.DueFees,
                   "Status": data.DuesFeesDetail.filterDuesFees.status,
+                },{
+                  "Fees": "Hostel",
+                  "Total Fees": 65000,
+                  "Due Fees": 0,
+                  "Status": "Completed",
                 }
               ]} heading={"Fees Details"} />
           {/* fees detail over */}
