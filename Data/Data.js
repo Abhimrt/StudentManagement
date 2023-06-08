@@ -35,12 +35,14 @@ const data = {
    "Holiday": 20,
    "StudentProfile": {
       "StudentId": "xyz01",
-      "studentName": "vikash",
+      "studentName": "vikash Kumar",
       "AddmissionSession": "2022-2023",
-      "Course": 1,
+      "Course": "B.Tech",
+      "email":"vikash01@gmail.com",
+      branch:"Computer Science",
       "batch": 3,
       "gender": "Male",
-      "perents": {
+      "parents": {
          "MotherName": "Reema",
          "MotherMobileNumber": 9875481262,
          "FatherName": "Ram",

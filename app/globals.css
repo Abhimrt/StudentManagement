@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-    box-sizing: border-box
+    box-sizing: border-box; 
 }
 body{
     width: 100vw;
@@ -14,6 +14,10 @@ body{
 }
 .component{
     @apply bg-slate-200 rounded-md p-5 shadow-md;
+    transition: .2s all ease;
+}
+.component:hover{
+    transform: scale(1.03);
 }
 
 .noScrollbar::-webkit-scrollbar {

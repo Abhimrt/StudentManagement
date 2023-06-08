@@ -23,7 +23,7 @@ import Heading from "./Heading";
 const Table = ({heading,data}) => {
   const tableHeadings = Object.keys(data[0]);
   return (
-    <div >
+    <div className="TableComponent" >
        <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-0 my-3 md:m-5  whitespace-nowrap">
         <Heading heading={heading}/>
       <table className="w-full  text-left text-gray-500">
@@ -42,7 +42,7 @@ const Table = ({heading,data}) => {
             
             {
               data.map((e)=>(
-                <tr className="bg-white border-b">
+                <tr className="bg-white border-b hover:bg-slate-200 transition ">
                     {
                       Object.values(e).map((e1,i)=>(
                         (i==0)?<th

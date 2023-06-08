@@ -28,7 +28,7 @@ const Calendar = () => {
             {/* events list */}
                 {
                     title[i]!=""?(
-                        <div className='py-1 px-5 shadow-lg rounded-full w-full  text-center bg-blue-300'>
+                        <div className='py-1 px-5 shadow-lg rounded-full w-full  text-center bg-blue-300 hover:scale-110 transition duration-150 ease-ou' >
                             <h3>
                                {title[i]}
                             </h3>
@@ -36,7 +36,7 @@ const Calendar = () => {
 
 
                         </div>
-                    ):(<div  className='py-1 px-5 shadow-lg rounded-full w-full  text-center bg-gray-300'>
+                    ):(<div  className='py-1 px-5 shadow-lg rounded-full w-full  text-center bg-gray-300 hover:scale-110 transition duration-150 ease-ou'>
                         <h3>
                           No Event
                         </h3>

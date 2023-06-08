@@ -3,15 +3,28 @@
     @apply  min-w-[12rem] flex justify-between  items-center bg-slate-200 rounded-md  h-32  shadow-md mt-5 
     whitespace-nowrap text-center overflow-hidden;
 
+    div{
+        transition: .1s all cubic-bezier(0, 0.37, 0, 1.43);
+    }
+
     .icons{
         @include center;
         @apply w-5/12 h-full shadow-md;
 
-        .mx-auto{
+        svg{
             font-size: 3rem;
             @apply p-0 drop-shadow-sm text-white;
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.206);
+            transition: .3s all cubic-bezier(0, 0.37, 0, 1.43);
         }
-
+        
+    }
+    &:hover{
+        div{
+            transform: scale(1.1);
+        }
+        svg{
+            font-size: 4rem;
+        }
     }
 }

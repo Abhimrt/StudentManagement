@@ -14,7 +14,7 @@ const page = () => {
     <div className='w-[95vw] m-auto overflow-hidden'>
       <div className=' overflow-hidden'>
         {/* top links */}
-        <div className='grid  grid-auto-fit gap-4 '>
+        <div className='grid  grid-auto-fit-sm gap-4 '>
           <Card1
             number={data.NumberOfQueries}
             type="Queries"

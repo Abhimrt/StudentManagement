@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Heading = ({heading}) => {
+const Heading = ({heading,size}) => {
   return (
-    <h3 className="font-bold text-xl text-gray-700 my-3 text-center">{heading}</h3>
+    <h3 className={`font-bold ${size?size:"text-xl"} text-gray-700 my-3 text-center`}>{heading}</h3>
   )
 }
 

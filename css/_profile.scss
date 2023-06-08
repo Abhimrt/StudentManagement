@@ -1,8 +1,9 @@
 .profile{
     .img{
-        @apply drop-shadow-md mx-auto my-3;
+        @apply w-full drop-shadow-md mx-auto my-3;
         background-color: aqua;
-        width: 130px;
+        min-width: 130px;
+        max-width: 200px;
         overflow: hidden;
         aspect-ratio: 1;
         border-radius: 50%
@@ -30,6 +31,18 @@
 
     .contentProfile{
         width: 300%;
-        transition: .5s all ease;
+        transition: .8s all cubic-bezier(0, 0.37, 0, 1.43);
+        table{
+            @apply ml-0 md:ml-5;
+            td{
+                @apply text-gray-500
+            }
+    
+            td:nth-child(1){
+                @apply pr-5 text-gray-800;
+            }
+        }
+
     }
 }
+

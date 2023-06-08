@@ -31,11 +31,10 @@ const PieChart = ({ data, label }) => {
     <>
       {/* Filled Pie chart */}
       <div className=" w-full  ">
-        <div className="  bg-slate-200 rounded-md shadow-md">
+        <div className=" component">
           <canvas id={label} className="">
-
           </canvas>
-          <Heading heading={label} />
+          <Heading heading={label +" "+data+"%"} />
         </div>
       </div>
     </>

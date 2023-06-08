@@ -2,20 +2,31 @@
   @apply min-w-[12rem] flex justify-between  items-center bg-slate-200 rounded-md  h-32  shadow-md mt-5 
     whitespace-nowrap text-center overflow-hidden;
 }
+.profileCard div {
+  transition: 0.1s all cubic-bezier(0, 0.37, 0, 1.43);
+}
 .profileCard .icons {
   @apply flex justify-center items-center;
   @apply w-5/12 h-full shadow-md;
 }
-.profileCard .icons .mx-auto {
+.profileCard .icons svg {
   font-size: 3rem;
   @apply p-0 drop-shadow-sm text-white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.206);
+  transition: 0.3s all cubic-bezier(0, 0.37, 0, 1.43);
+}
+.profileCard:hover div {
+  transform: scale(1.1);
+}
+.profileCard:hover svg {
+  font-size: 4rem;
 }
 
 .profile .img {
-  @apply drop-shadow-md mx-auto my-3;
+  @apply w-full drop-shadow-md mx-auto my-3;
   background-color: aqua;
-  width: 130px;
+  min-width: 130px;
+  max-width: 200px;
   overflow: hidden;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -41,5 +52,14 @@
 }
 .profile .contentProfile {
   width: 300%;
-  transition: 0.5s all ease;
+  transition: 0.8s all cubic-bezier(0, 0.37, 0, 1.43);
+}
+.profile .contentProfile table {
+  @apply ml-0 md:ml-5;
+}
+.profile .contentProfile table td {
+  @apply text-gray-500;
+}
+.profile .contentProfile table td:nth-child(1) {
+  @apply pr-5 text-gray-800;
 }/*# sourceMappingURL=main.css.map */
